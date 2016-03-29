@@ -1,34 +1,121 @@
-html body {
-	font-family: 'Helvetica', Arial, sans-serif;
+html {
+	font-family: Palatino Linotype;
+	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+    width: 100%;
+    background:#ffe6ff;
+}
+
+body {
+	font-family: Palatino Linotype;
 	color: #111
-	background: #E7E7E7;
+	width: 100%
 }
 
 a {
 	color: #0078A0;
 }
 
+span {
+	color: #6600CC;
+}
+
 .content {
 	text-align: center
-	padding: 0 15% 20px;
+}
+
+.content p {
+	text-align: center
+	font-size: 4em;
+	color: #66FF66;	
 }
 
 .content h1 {
 	text-transform: uppercase;
 	font-weight: bold;
-	margin: 20px 0;
+	margin: auto;
+	text-align: center;
+	font-size:50px;
+}
 
-
-content form {
-	padding: 10px;
-	width: 300px;
-	margin: 0 auto;
+.content form {
+	width: 200px;
+	margin: auto;
 }
 
 .content form input {
-	width: 100%;
-	// border: 2px solid #107394;
-	color: #107394;
+	width: 200px;
+	height: 25px;
+	border: 2px solid #ff1a75;
+	color: #ff1a75;
 	background: transparent;
-	magrin-bottom: 15px;
+	font-family: Palatino Linotype;
+}
+
+/* Button CSS */
+.btn {
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+	font-family: Palatino Linotype;
+	color: #ffffff;
+	font-size: 30px;
+	background: #ff1a75;
+	padding: 10px 20px 10px 20px;
+	width: 200px;
+	height: 70px;
+	border: solid #ffffff 0px;
+	text-decoration: none;
+	position: relative;
+	top: 50%;
+	vertical-align: middle;
+}
+
+.btn:hover {
+	background: #CCFFFF;
+	text-decoration: none;
+}
+
+.btn:focus {
+	outline:0;
+}
+
+.btn2 {
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+	font-family: Palatino Linotype;
+	color: #ffffff;
+	font-size: 15px;
+	background: #ff1a75;
+	width: 50px;
+	height: 30px;
+	border: solid #ffffff 0px;
+	text-decoration: none;
+	position: relative;
+	vertical-align: middle;
+}
+.btn2:hover {
+	background: #6600CC;
+	text-decoration: none;
+}
+.btn2:focus {
+	outline:0;
+}
+
+
+#list {
+	 font-family: Palatino Linotype;
+	 color: #ff1a75;
+	 font-size: 50px;
+	 text-align: center;   
+}	 
+
+.rainbow {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
 }

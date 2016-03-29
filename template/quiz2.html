@@ -1,37 +1,46 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8"
+		<meta charset="UTF-8">
 		<title>Quiz 2</title>
+		<link rel="stylesheet" href="quiz2.css">
 	</head>
-	<body>
-		
+	<body>	
 		<div class="content">
-			<h1>Hi, Welcome to the second quiz!</h1>
+			<h1 class="rainbow" style="text-align:center">Hi, Welcome to the second quiz!</h1>
 			<p>Make sure the containers below respond to the events or functions implemented with quiz2.js</p>
 			<div class="evens">			
-				<div class="click">
-					<span>click event</span>
-				</div>
-				<div class="mouse-over">
-					<span>mouse over event</span>
-					<p>Who's the richest person you know? (mouse over to find out)</p>
-				</div>
 				<div>
-					<span>submit event</span>
+					<span class="clicks">This is the click event</span>
+				</div>
+				<br></br>
+				<div id="buttons">
+						<button onclick="randomFunction()" class="btn" id="titleBtn">GET TITLE</button>
+						<button style="display:none;" onclick="bakingFunction()" class="btn" id="keepBtn">Keep It</button>
+						<div id="list"></div>
+						<div id="list2"></div>
+				</div>
+				<br></br>
+				<div style="border: solid #ff1a75 2px; width:300px; margin:auto">
+					<span>This is the submit event</span>
 					<!-- The form not having an action or method is not a bug in this case -->
 					<form>
-						<label for="form">AJAX, yo!</label>
-						<input type="text" id="form" name="form" placeholder="Enter Some Text" />
-						<input value="SUBMIT">
+						<label for="form" class="rainbow">AJAX, yo!</label>
+						<input style="margin:auto" type="text" id="form" name="form" placeholder="Enter Some Text">
+						<input class="btn2" id="submit" value="SUBMIT" type="submit">
 					</form>
+				<br></br>
 				</div>
-				div class="timeout">
-					<span>timeout function</span>
+				<div class="timeout">
+					<span>This is the timeout function</span>
+				</div>
+				<div class="mouseover" id="mouseover" style="border: solid #ff1a75 2px; width:300px; margin:auto">
+					<span>This is the mouse over event</span>
+					<p>Who's the richest person you know? (mouse over to find out)</p>
 				</div>
 			</div>
-		
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="quiz2.js"></script>
 	</body>
 </html>
